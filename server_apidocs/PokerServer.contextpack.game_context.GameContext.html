@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>PokerServer.contextpack.game_context.GameContext : API documentation</title>
+
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+  </head>
+  <body>
+
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">
+            PokerServer API Documentation
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div id="showPrivate">
+      <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+    </div>
+
+    <div class="container">
+
+      <div class="page-header">
+        <h1 class="class"><code>PokerServer.contextpack.game_context.GameContext</code> <small>class documentation</small></h1>
+
+        <span id="partOf">
+          Part of <code><a href="PokerServer.html" class="code" data-type="Package">PokerServer</a>.<a href="PokerServer.contextpack.html" class="code" data-type="Package">contextpack</a>.<a href="PokerServer.contextpack.game_context.html" class="code" data-type="Module">game_context</a></code>
+          
+          <a href="classIndex.html#PokerServer.contextpack.game_context.GameContext">(View In Hierarchy)</a>
+        </span>
+      </div>
+
+      <div class="extrasDocstring">
+        
+      </div>
+
+      <div class="moduleDocstring">
+        <div><p>Data object describing all important parameters of the Game Context</p></div>
+      </div>
+
+      <div id="splitTables">
+        <table class="children sortable" id="id30">
+  
+  <tr class="method">
+    
+    <td>Method</td>
+    <td><a href="PokerServer.contextpack.game_context.GameContext.html#__init__" class="code" data-type="Method">__init__</a></td>
+    <td><span>Construct Game Context object</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><a href="PokerServer.contextpack.game_context.GameContext.html#name" class="code" data-type="Instance Variable">name</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><a href="PokerServer.contextpack.game_context.GameContext.html#account" class="code" data-type="Instance Variable">account</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><a href="PokerServer.contextpack.game_context.GameContext.html#table_id" class="code" data-type="Instance Variable">table_id</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><a href="PokerServer.contextpack.game_context.GameContext.html#player_dict" class="code" data-type="Instance Variable">player_dict</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><a href="PokerServer.contextpack.game_context.GameContext.html#game_state" class="code" data-type="Instance Variable">game_state</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><a href="PokerServer.contextpack.game_context.GameContext.html#build_context" class="code" data-type="Method">build_context</a></td>
+    <td><span>Build Game Context object on the base of a given Game State object.</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><a href="PokerServer.contextpack.game_context.GameContext.html#check_fold_form" class="code" data-type="Method">check_fold_form</a></td>
+    <td><span>Method for Fold form validation.</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><a href="PokerServer.contextpack.game_context.GameContext.html#check_bet_form" class="code" data-type="Method">check_bet_form</a></td>
+    <td><span>Method for Bet form validation.</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><a href="PokerServer.contextpack.game_context.GameContext.html#check_add_chips_form" class="code" data-type="Method">check_add_chips_form</a></td>
+    <td><span>Method for Add Chips form validation.</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><a href="PokerServer.contextpack.game_context.GameContext.html#encoded" class="code" data-type="Method">encoded</a></td>
+    <td><span>Get JSON-encoded version of Game Context.</span></td>
+  </tr>
+</table>
+        
+
+          
+      </div>
+
+      <div id="childList">
+
+        <div class="basemethod">
+  
+  <a name="PokerServer.contextpack.game_context.GameContext.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __init__(self, account, table_id):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p>Construct Game Context object</p><p>:param account: Account, associated with user. :param table_id: Room id.</p></div>
+  </div>
+</div><div class="baseinstancevariable">
+  
+  <a name="PokerServer.contextpack.game_context.GameContext.name">
+    
+  </a>
+  <a name="name">
+    
+  </a>
+  <div class="functionHeader">
+    name =
+  </div>
+  <div class="functionBody">
+    <div class="undocumented">Undocumented</div> (type: <code>str</code>)
+  </div>
+</div><div class="baseinstancevariable">
+  
+  <a name="PokerServer.contextpack.game_context.GameContext.account">
+    
+  </a>
+  <a name="account">
+    
+  </a>
+  <div class="functionHeader">
+    account =
+  </div>
+  <div class="functionBody">
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="baseinstancevariable">
+  
+  <a name="PokerServer.contextpack.game_context.GameContext.table_id">
+    
+  </a>
+  <a name="table_id">
+    
+  </a>
+  <div class="functionHeader">
+    table_id =
+  </div>
+  <div class="functionBody">
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="baseinstancevariable">
+  
+  <a name="PokerServer.contextpack.game_context.GameContext.player_dict">
+    
+  </a>
+  <a name="player_dict">
+    
+  </a>
+  <div class="functionHeader">
+    player_dict =
+  </div>
+  <div class="functionBody">
+    <div class="undocumented">Undocumented</div> (type: <code>Dict</code>)
+  </div>
+</div><div class="baseinstancevariable">
+  
+  <a name="PokerServer.contextpack.game_context.GameContext.game_state">
+    
+  </a>
+  <a name="game_state">
+    
+  </a>
+  <div class="functionHeader">
+    game_state =
+  </div>
+  <div class="functionBody">
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="basemethod">
+  
+  <a name="PokerServer.contextpack.game_context.GameContext.build_context">
+    
+  </a>
+  <a name="build_context">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    build_context(self, game_state):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p>Build Game Context object on the base of a given Game State object.</p><p>:param game_state: Game state object, provided by Game Center. :return: Returns Game Context object.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  <a name="PokerServer.contextpack.game_context.GameContext.check_fold_form">
+    
+  </a>
+  <a name="check_fold_form">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    check_fold_form(self):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p>Method for Fold form validation.</p><p>:return: Returns True if the form is valid. Otherwise, returns False.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  <a name="PokerServer.contextpack.game_context.GameContext.check_bet_form">
+    
+  </a>
+  <a name="check_bet_form">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    check_bet_form(self, bet):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p>Method for Bet form validation.</p><p>:param bet: Bet value. :return: Returns True if the form is valid. Otherwise, returns False.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  <a name="PokerServer.contextpack.game_context.GameContext.check_add_chips_form">
+    
+  </a>
+  <a name="check_add_chips_form">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    check_add_chips_form(self, chips):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p>Method for Add Chips form validation.</p><p>:param chips: Chips value. :return: Returns True if the form is valid. Otherwise, returns False.</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  <a name="PokerServer.contextpack.game_context.GameContext.encoded">
+    
+  </a>
+  <a name="encoded">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    encoded(self):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p>Get JSON-encoded version of Game Context.</p><p>:return: Returns JSON-encoded version of the object state.</p></div>
+  </div>
+</div>
+
+      </div>
+      <address>
+        <a href="index.html">API Documentation</a> for PokerServer, generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a> at 2022-07-02 11:52:42.
+      </address>
+
+    </div>
+
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

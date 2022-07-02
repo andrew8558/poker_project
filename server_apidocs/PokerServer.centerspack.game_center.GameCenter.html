@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>PokerServer.centerspack.game_center.GameCenter : API documentation</title>
+
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+  </head>
+  <body>
+
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">
+            PokerServer API Documentation
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div id="showPrivate">
+      <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+    </div>
+
+    <div class="container">
+
+      <div class="page-header">
+        <h1 class="class"><code>PokerServer.centerspack.game_center.GameCenter</code> <small>class documentation</small></h1>
+
+        <span id="partOf">
+          Part of <code><a href="PokerServer.html" class="code" data-type="Package">PokerServer</a>.<a href="PokerServer.centerspack.html" class="code" data-type="Package">centerspack</a>.<a href="PokerServer.centerspack.game_center.html" class="code" data-type="Module">game_center</a></code>
+          
+          <a href="classIndex.html#PokerServer.centerspack.game_center.GameCenter">(View In Hierarchy)</a>
+        </span>
+      </div>
+
+      <div class="extrasDocstring">
+        
+      </div>
+
+      <div class="moduleDocstring">
+        <div><p>Used to work with the logic of the game</p></div>
+      </div>
+
+      <div id="splitTables">
+        <table class="children sortable" id="id22">
+  
+  <tr class="method">
+    
+    <td>Method</td>
+    <td><a href="PokerServer.centerspack.game_center.GameCenter.html#__init__" class="code" data-type="Method">__init__</a></td>
+    <td><span>Defines class fields.</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><a href="PokerServer.centerspack.game_center.GameCenter.html#senders" class="code" data-type="Instance Variable">senders</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><a href="PokerServer.centerspack.game_center.GameCenter.html#condition_terminate" class="code" data-type="Instance Variable">condition_terminate</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><a href="PokerServer.centerspack.game_center.GameCenter.html#mail" class="code" data-type="Instance Variable">mail</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><a href="PokerServer.centerspack.game_center.GameCenter.html#game_state" class="code" data-type="Instance Variable">game_state</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><a href="PokerServer.centerspack.game_center.GameCenter.html#id" class="code" data-type="Instance Variable">id</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><a href="PokerServer.centerspack.game_center.GameCenter.html#blind_size" class="code" data-type="Instance Variable">blind_size</a></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><a href="PokerServer.centerspack.game_center.GameCenter.html#process" class="code" data-type="Method">process</a></td>
+    <td><span>Parses the request and calls the appropriate method</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><a href="PokerServer.centerspack.game_center.GameCenter.html#connect" class="code" data-type="Method">connect</a></td>
+    <td><span>Adds a player to the table.</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><a href="PokerServer.centerspack.game_center.GameCenter.html#update" class="code" data-type="Method">update</a></td>
+    <td><span>Sends the game status to the players</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><a href="PokerServer.centerspack.game_center.GameCenter.html#disconnect" class="code" data-type="Method">disconnect</a></td>
+    <td><span>"Removes a player from the table</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><a href="PokerServer.centerspack.game_center.GameCenter.html#ready" class="code" data-type="Method">ready</a></td>
+    <td><span>Changes the player's readiness field.</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><a href="PokerServer.centerspack.game_center.GameCenter.html#not_ready" class="code" data-type="Method">not_ready</a></td>
+    <td><span>Changes the player's readiness field.</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><a href="PokerServer.centerspack.game_center.GameCenter.html#check_time" class="code" data-type="Method">check_time</a></td>
+    <td><span>Checks timers and reacts to their completion</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><a href="PokerServer.centerspack.game_center.GameCenter.html#preflop" class="code" data-type="Method">preflop</a></td>
+    <td><span>Generates a preflop stage</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><a href="PokerServer.centerspack.game_center.GameCenter.html#deal" class="code" data-type="Method">deal</a></td>
+    <td><span>Identifies player cards and board cards</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><a href="PokerServer.centerspack.game_center.GameCenter.html#fold" class="code" data-type="Method">fold</a></td>
+    <td><span>Accepts the player's fold and calls the default_game_state method</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><a href="PokerServer.centerspack.game_center.GameCenter.html#bet" class="code" data-type="Method">bet</a></td>
+    <td><span>Accepts the player's bet and determines the next move of the game</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><a href="PokerServer.centerspack.game_center.GameCenter.html#flop" class="code" data-type="Method">flop</a></td>
+    <td><span>Changes the stage of the game and starts the timer of the player on the big blind</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><a href="PokerServer.centerspack.game_center.GameCenter.html#turn" class="code" data-type="Method">turn</a></td>
+    <td><span>Changes the stage of the game and starts the timer of the player on the big blind</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><a href="PokerServer.centerspack.game_center.GameCenter.html#river" class="code" data-type="Method">river</a></td>
+    <td><span>Changes the stage of the game and starts the timer of the player on the big blind</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><a href="PokerServer.centerspack.game_center.GameCenter.html#showdown" class="code" data-type="Method">showdown</a></td>
+    <td><span>Changes the stage of the game and determines the winner</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><a href="PokerServer.centerspack.game_center.GameCenter.html#add_chips" class="code" data-type="Method">add_chips</a></td>
+    <td><span>Adds chips to the player's stack</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><a href="PokerServer.centerspack.game_center.GameCenter.html#default_game_state" class="code" data-type="Method">default_game_state</a></td>
+    <td><span>Changes the fields of the game center class object to default values</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><a href="PokerServer.centerspack.game_center.GameCenter.html#terminate" class="code" data-type="Method">terminate</a></td>
+    <td><span>Changes condition_terminate field that causes the loop to stop in the run method</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><a href="PokerServer.centerspack.game_center.GameCenter.html#run" class="code" data-type="Method">run</a></td>
+    <td><span>Initializes the lifecycle of the game_center class object</span></td>
+  </tr>
+</table>
+        
+
+          
+      </div>
+
+      <div id="childList">
+
+        <div class="basemethod">
+  
+  <a name="PokerServer.centerspack.game_center.GameCenter.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    __init__(self, id, blind_size):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p>Defines class fields.</p><p>Keyword arguments: id -- table's id blind_size -- blind size on table</p></div>
+  </div>
+</div><div class="baseinstancevariable">
+  
+  <a name="PokerServer.centerspack.game_center.GameCenter.senders">
+    
+  </a>
+  <a name="senders">
+    
+  </a>
+  <div class="functionHeader">
+    senders =
+  </div>
+  <div class="functionBody">
+    <div class="undocumented">Undocumented</div> (type: <code>List</code>)
+  </div>
+</div><div class="baseinstancevariable">
+  
+  <a name="PokerServer.centerspack.game_center.GameCenter.condition_terminate">
+    
+  </a>
+  <a name="condition_terminate">
+    
+  </a>
+  <div class="functionHeader">
+    condition_terminate =
+  </div>
+  <div class="functionBody">
+    <div class="undocumented">Undocumented</div> (type: <code>bool</code>)
+  </div>
+</div><div class="baseinstancevariable">
+  
+  <a name="PokerServer.centerspack.game_center.GameCenter.mail">
+    
+  </a>
+  <a name="mail">
+    
+  </a>
+  <div class="functionHeader">
+    mail =
+  </div>
+  <div class="functionBody">
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="baseinstancevariable">
+  
+  <a name="PokerServer.centerspack.game_center.GameCenter.game_state">
+    
+  </a>
+  <a name="game_state">
+    
+  </a>
+  <div class="functionHeader">
+    game_state =
+  </div>
+  <div class="functionBody">
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="baseinstancevariable">
+  
+  <a name="PokerServer.centerspack.game_center.GameCenter.id">
+    
+  </a>
+  <a name="id">
+    
+  </a>
+  <div class="functionHeader">
+    id =
+  </div>
+  <div class="functionBody">
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="baseinstancevariable">
+  
+  <a name="PokerServer.centerspack.game_center.GameCenter.blind_size">
+    
+  </a>
+  <a name="blind_size">
+    
+  </a>
+  <div class="functionHeader">
+    blind_size =
+  </div>
+  <div class="functionBody">
+    <div class="undocumented">Undocumented</div>
+  </div>
+</div><div class="basemethod">
+  
+  <a name="PokerServer.centerspack.game_center.GameCenter.process">
+    
+  </a>
+  <a name="process">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    process(self, message):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p>Parses the request and calls the appropriate method</p><p>Keywords arguments: message -- tuple where the first argument is a request and the rest is data</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  <a name="PokerServer.centerspack.game_center.GameCenter.connect">
+    
+  </a>
+  <a name="connect">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    connect(self, sender, account, bank):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p>Adds a player to the table.</p><p>Keyword arguments: sender -- an object of the manager who sent the request account -- an object of the account class bank -- number of player's chips</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  <a name="PokerServer.centerspack.game_center.GameCenter.update">
+    
+  </a>
+  <a name="update">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    update(self):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p>Sends the game status to the players</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  <a name="PokerServer.centerspack.game_center.GameCenter.disconnect">
+    
+  </a>
+  <a name="disconnect">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    disconnect(self, sender, account):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p>"Removes a player from the table</p><p>Keyword arguments: sender -- an object of the manager who sent the request account -- an object of the account class</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  <a name="PokerServer.centerspack.game_center.GameCenter.ready">
+    
+  </a>
+  <a name="ready">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    ready(self, account):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p>Changes the player's readiness field.</p><p>Keyword arguments: account -- an object of the account class</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  <a name="PokerServer.centerspack.game_center.GameCenter.not_ready">
+    
+  </a>
+  <a name="not_ready">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    not_ready(self, account):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p>Changes the player's readiness field.</p><p>Keyword arguments: account -- an object of the account class</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  <a name="PokerServer.centerspack.game_center.GameCenter.check_time">
+    
+  </a>
+  <a name="check_time">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    check_time(self):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p>Checks timers and reacts to their completion</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  <a name="PokerServer.centerspack.game_center.GameCenter.preflop">
+    
+  </a>
+  <a name="preflop">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    preflop(self):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p>Generates a preflop stage</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  <a name="PokerServer.centerspack.game_center.GameCenter.deal">
+    
+  </a>
+  <a name="deal">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    deal(self):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p>Identifies player cards and board cards</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  <a name="PokerServer.centerspack.game_center.GameCenter.fold">
+    
+  </a>
+  <a name="fold">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    fold(self, account):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p>Accepts the player's fold and calls the default_game_state method</p><p>Keyword arguments: account -- an object of the account class</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  <a name="PokerServer.centerspack.game_center.GameCenter.bet">
+    
+  </a>
+  <a name="bet">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    bet(self, account, bet):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p>Accepts the player's bet and determines the next move of the game</p><p>account -- an object of the account class bet -- the number of chips that the player has bet</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  <a name="PokerServer.centerspack.game_center.GameCenter.flop">
+    
+  </a>
+  <a name="flop">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    flop(self):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p>Changes the stage of the game and starts the timer of the player on the big blind</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  <a name="PokerServer.centerspack.game_center.GameCenter.turn">
+    
+  </a>
+  <a name="turn">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    turn(self):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p>Changes the stage of the game and starts the timer of the player on the big blind</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  <a name="PokerServer.centerspack.game_center.GameCenter.river">
+    
+  </a>
+  <a name="river">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    river(self):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p>Changes the stage of the game and starts the timer of the player on the big blind</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  <a name="PokerServer.centerspack.game_center.GameCenter.showdown">
+    
+  </a>
+  <a name="showdown">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    showdown(self):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p>Changes the stage of the game and determines the winner</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  <a name="PokerServer.centerspack.game_center.GameCenter.add_chips">
+    
+  </a>
+  <a name="add_chips">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    add_chips(self, account, chips):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p>Adds chips to the player's stack</p><p>Keyword arguments: account -- an object of the account class chips -- the number of chips that the player adds</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  <a name="PokerServer.centerspack.game_center.GameCenter.default_game_state">
+    
+  </a>
+  <a name="default_game_state">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    default_game_state(self):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p>Changes the fields of the game center class object to default values</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  <a name="PokerServer.centerspack.game_center.GameCenter.terminate">
+    
+  </a>
+  <a name="terminate">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    terminate(self):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p>Changes condition_terminate field that causes the loop to stop in the run method</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  <a name="PokerServer.centerspack.game_center.GameCenter.run">
+    
+  </a>
+  <a name="run">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    run(self):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p>Initializes the lifecycle of the game_center class object</p></div>
+  </div>
+</div>
+
+      </div>
+      <address>
+        <a href="index.html">API Documentation</a> for PokerServer, generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a> at 2022-07-02 11:52:42.
+      </address>
+
+    </div>
+
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>PokerServer.centerspack.find_combination : API documentation</title>
+
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+  </head>
+  <body>
+
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">
+            PokerServer API Documentation
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div id="showPrivate">
+      <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+    </div>
+
+    <div class="container">
+
+      <div class="page-header">
+        <h1 class="module"><code>PokerServer.centerspack.find_combination</code> <small>module documentation</small></h1>
+
+        <span id="partOf">
+          Part of <code><a href="PokerServer.html" class="code" data-type="Package">PokerServer</a>.<a href="PokerServer.centerspack.html" class="code" data-type="Package">centerspack</a></code>
+          
+          
+        </span>
+      </div>
+
+      <div class="extrasDocstring">
+        
+      </div>
+
+      <div class="moduleDocstring">
+        <div class="undocumented">Undocumented</div>
+      </div>
+
+      <div id="splitTables">
+        <table class="children sortable" id="id18">
+  
+  <tr class="variable">
+    
+    <td>Variable</td>
+    <td><a href="PokerServer.centerspack.find_combination.html#hierarchy" class="code" data-type="Variable">hierarchy</a></td>
+    <td><span>Dictionary where the key is a card, and the value is its rang</span></td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><a href="PokerServer.centerspack.find_combination.html#combination" class="code" data-type="Function">combination</a></td>
+    <td><span>Looking for a player combination.</span></td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><a href="PokerServer.centerspack.find_combination.html#check_flushness" class="code" data-type="Function">check_flushness</a></td>
+    <td><span>Checks a set of cards for the presence of a flash</span></td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><a href="PokerServer.centerspack.find_combination.html#check_sameness" class="code" data-type="Function">check_sameness</a></td>
+    <td><span>Checks how many times a card of the same denomination is repeated.</span></td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><a href="PokerServer.centerspack.find_combination.html#check_straight_flush" class="code" data-type="Function">check_straight_flush</a></td>
+    <td><span>Checks whether a set of cards has a straight flush combination.</span></td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><a href="PokerServer.centerspack.find_combination.html#check_care" class="code" data-type="Function">check_care</a></td>
+    <td><span>Checks whether a set of cards has a care combination.</span></td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><a href="PokerServer.centerspack.find_combination.html#check_full_house" class="code" data-type="Function">check_full_house</a></td>
+    <td><span>Checks whether a set of cards has a full house combination.</span></td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><a href="PokerServer.centerspack.find_combination.html#check_flush" class="code" data-type="Function">check_flush</a></td>
+    <td><span>Checks whether a set of cards has a flush combination.</span></td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><a href="PokerServer.centerspack.find_combination.html#check_straight" class="code" data-type="Function">check_straight</a></td>
+    <td><span>Checks whether a set of cards has a straight combination.</span></td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><a href="PokerServer.centerspack.find_combination.html#check_set" class="code" data-type="Function">check_set</a></td>
+    <td><span>Checks whether a set of cards has a set combination.</span></td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><a href="PokerServer.centerspack.find_combination.html#check_dopers" class="code" data-type="Function">check_dopers</a></td>
+    <td><span>Checks whether a set of cards has a two pairs combination.</span></td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><a href="PokerServer.centerspack.find_combination.html#check_pair" class="code" data-type="Function">check_pair</a></td>
+    <td><span>Checks whether a set of cards has a one pair combination.</span></td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><a href="PokerServer.centerspack.find_combination.html#check_high_card" class="code" data-type="Function">check_high_card</a></td>
+    <td><span>Checks whether a set of cards has a high card combination.</span></td>
+  </tr>
+</table>
+        
+
+          
+      </div>
+
+      <div id="childList">
+
+        <div class="basevariable">
+  
+  <a name="PokerServer.centerspack.find_combination.hierarchy">
+    
+  </a>
+  <a name="hierarchy">
+    
+  </a>
+  <div class="functionHeader">
+    hierarchy =
+  </div>
+  <div class="functionBody">
+    <div><p>Dictionary where the key is a card, and the value is its rang</p></div> (type: <code>Dict[str, int]</code>)
+  </div>
+</div><div class="basefunction">
+  
+  <a name="PokerServer.centerspack.find_combination.combination">
+    
+  </a>
+  <a name="combination">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    combination(hand, table):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p>Looking for a player combination.</p><p>Keyword arguments: hand -- player's hand table -- table's cards</p><p>Returns a tuple meaning a combination.</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  <a name="PokerServer.centerspack.find_combination.check_flushness">
+    
+  </a>
+  <a name="check_flushness">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    check_flushness(card_set):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p>Checks a set of cards for the presence of a flash</p><p>Keyword arguments: card_set -- list of player's cards and table's cards</p><p>Returns boolean variable.</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  <a name="PokerServer.centerspack.find_combination.check_sameness">
+    
+  </a>
+  <a name="check_sameness">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    check_sameness(card_set):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p>Checks how many times a card of the same denomination is repeated.</p><p>Keyword arguments: card_set -- list of player's cards and table's cards</p><p>Returns dictionary where the key is the denomination of the cards and the value is how many times it is repeated.</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  <a name="PokerServer.centerspack.find_combination.check_straight_flush">
+    
+  </a>
+  <a name="check_straight_flush">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    check_straight_flush(cards_set):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p>Checks whether a set of cards has a straight flush combination.</p><p>Keyword arguments: card_set -- list of player's cards and table's cards</p><p>Returns a tuple describing the combination</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  <a name="PokerServer.centerspack.find_combination.check_care">
+    
+  </a>
+  <a name="check_care">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    check_care(card_set):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p>Checks whether a set of cards has a care combination.</p><p>Keyword arguments: card_set -- list of player's cards and table's cards</p><p>Returns a tuple describing the combination</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  <a name="PokerServer.centerspack.find_combination.check_full_house">
+    
+  </a>
+  <a name="check_full_house">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    check_full_house(same_cards):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p>Checks whether a set of cards has a full house combination.</p><p>Keyword arguments: card_set -- list of player's cards and table's cards</p><p>Returns a tuple describing the combination</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  <a name="PokerServer.centerspack.find_combination.check_flush">
+    
+  </a>
+  <a name="check_flush">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    check_flush(card_set, hand):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p>Checks whether a set of cards has a flush combination.</p><p>Keyword arguments: card_set -- list of player's cards and table's cards</p><p>Returns a tuple describing the combination</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  <a name="PokerServer.centerspack.find_combination.check_straight">
+    
+  </a>
+  <a name="check_straight">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    check_straight(same_cards):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p>Checks whether a set of cards has a straight combination.</p><p>Keyword arguments: card_set -- list of player's cards and table's cards</p><p>Returns a tuple describing the combination</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  <a name="PokerServer.centerspack.find_combination.check_set">
+    
+  </a>
+  <a name="check_set">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    check_set(same_cards):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p>Checks whether a set of cards has a set combination.</p><p>Keyword arguments: card_set -- list of player's cards and table's cards</p><p>Returns a tuple describing the combination</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  <a name="PokerServer.centerspack.find_combination.check_dopers">
+    
+  </a>
+  <a name="check_dopers">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    check_dopers(same_cards):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p>Checks whether a set of cards has a two pairs combination.</p><p>Keyword arguments: card_set -- list of player's cards and table's cards</p><p>Returns a tuple describing the combination</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  <a name="PokerServer.centerspack.find_combination.check_pair">
+    
+  </a>
+  <a name="check_pair">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    check_pair(same_cards):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p>Checks whether a set of cards has a one pair combination.</p><p>Keyword arguments: card_set -- list of player's cards and table's cards</p><p>Returns a tuple describing the combination</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  <a name="PokerServer.centerspack.find_combination.check_high_card">
+    
+  </a>
+  <a name="check_high_card">
+    
+  </a>
+  <div class="functionHeader">
+    
+    def
+    check_high_card(card_set, hand):
+    
+  </div>
+  <div class="docstring functionBody">
+    
+    
+    <div><p>Checks whether a set of cards has a high card combination.</p><p>Keyword arguments: card_set -- list of player's cards and table's cards</p><p>Returns a tuple describing the combination</p></div>
+  </div>
+</div>
+
+      </div>
+      <address>
+        <a href="index.html">API Documentation</a> for PokerServer, generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a> at 2022-07-02 11:52:42.
+      </address>
+
+    </div>
+
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>
